@@ -1,0 +1,170 @@
+/* Farben und Typografie der App „Stille Zeit" —
+   Schiefergrün, Sandton, warmes Gold. */
+
+:root {
+  --sand: #f4f0e6;
+  --karte: #ffffff;
+  --tinte: #1c2420;
+  --tinte-leise: #5c6660;
+  --schiefer: #2f4f4f;
+  --gold: #a8863f;
+  --linie: rgba(47, 79, 79, 0.16);
+  --linie-zart: rgba(47, 79, 79, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sand: #141a18;
+    --karte: #1e2624;
+    --tinte: #e8e4d9;
+    --tinte-leise: #9aa49e;
+    --schiefer: #8fb3a8;
+    --gold: #c4a35a;
+    --linie: rgba(143, 179, 168, 0.22);
+    --linie-zart: rgba(143, 179, 168, 0.1);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--sand);
+  color: var(--tinte);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.huelle {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+/* ── Kopf ── */
+
+.kopf {
+  margin-bottom: 3rem;
+}
+
+.marke {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tinte-leise);
+  margin: 0 0 0.9rem;
+}
+
+h1 {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 5vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  text-wrap: balance;
+  margin: 0 0 0.7rem;
+}
+
+.stand {
+  font-size: 0.88rem;
+  color: var(--tinte-leise);
+  margin: 0;
+}
+
+.vorspann {
+  font-size: 1.05rem;
+  color: var(--tinte-leise);
+  margin: 0;
+}
+
+/* ── Text ── */
+
+h2 {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 2.75rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--linie);
+}
+
+h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 1.9rem 0 0.4rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+a {
+  color: var(--schiefer);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.anschrift {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+/* ── Karten und Hinweise ── */
+
+.karte {
+  background: var(--karte);
+  border: 1px solid var(--linie);
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.karte p:last-child {
+  margin-bottom: 0;
+}
+
+.rechtsgrund {
+  font-size: 0.88rem;
+  color: var(--tinte-leise);
+  border-left: 2px solid var(--linie);
+  padding-left: 0.85rem;
+  margin: 1.1rem 0 1.5rem;
+}
+
+/* ── Fuß ── */
+
+.fuss {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--linie);
+  font-size: 0.88rem;
+  color: var(--tinte-leise);
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
