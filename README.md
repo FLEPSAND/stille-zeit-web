@@ -11,6 +11,7 @@ Der Quellcode der App liegt **nicht** in diesem Repo, sondern privat in
 |---|---|---|
 | `index.html` | Hilfe, häufige Fragen, Anbieterangaben | Support-URL |
 | `datenschutz.html` | Datenschutzerklärung | Datenschutz-URL |
+| `datenschutz-en.html` | englische Fassung (aus `docs/privacy-policy.md`) | Privacy-Policy-URL der englischen Produktseite |
 | `stil.css` | gemeinsames Aussehen, Farben der App | — |
 
 ## Änderungen an der Datenschutzerklärung
